@@ -1,0 +1,347 @@
+/*Theme Name: Web Mano a Mano
+Theme URI: http://www.manoamano.mx
+Author: Tec. Antonio Xoyoc Becerra Farias
+Author URI: http://www.manoamano.mx/humans.txt
+Description: Este es el tema para la empresa de mano a mano diseñado para utilizarlo en WordPress
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: Paquetería, Mensajería, Entrega, Guadalajara.*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+@font-face
+{
+	font-family: "manoamano";
+	src: url(fonts/akzidenz-grotesk-bold.eot);
+	src: url(fonts/akzidenz-grotesk-bold.eot#iefix) format("embedded-opentype"),
+		 url(fonts/akzidenz-grotesk-bold.ttf) format("truetype"),
+		 url(fonts/akzidenz-grotesk-bold.svg) format("svg"),
+		 url(fonts/akzidenz-grotesk-bold.woff) format("woff");
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: rgb(159,33,96);
+}
+
+body
+{
+	background: rgb(244,147,52);
+	color: #000;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-align: center;
+	position: absolute;
+	width: 100%
+}
+
+header
+{
+	background: rgb(244,147,52);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+hr
+{
+	border: solid thin #F60;
+	margin: 1em auto;
+	width: 80%;
+}
+
+iframe, img
+{
+	max-width: 100%;
+}
+
+#contenido
+{
+	margin: 10.5em auto 1em auto;
+	padding: .5em;
+	width: 100%;
+}
+
+#est_cob
+{
+	margin-left: 605px;
+	text-align: left;
+	top: 0;
+	width: 25%;
+}
+
+
+
+#logo
+{
+	padding-right: .25em;
+	padding-top: .25em;
+	text-align: right;
+	width: 100%;
+}
+
+#logo img
+{
+	height: 79px;
+	width: 180px;
+}
+
+#menu-principal
+{
+	font-family: "manoamano", sans-serif;
+	font-size: 18px;
+	text-align: left;
+}
+
+#menu-principal a
+{
+	display: block;
+	border-bottom: thin solid #640429;
+	padding: 1em;
+	text-transform: uppercase;
+}
+  
+#menu-principal li
+{
+	list-style: none;
+}
+
+#panel
+{
+	background: #FFFFFF;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	overflow-x: hidden;
+	position: fixed;
+	top: 0;
+	width: 0;
+} 
+
+#panel-boton
+{
+	display: none;
+}
+
+#panel-boton:checked ~ #panel-etiqueta, #panel-boton:checked ~ header, #panel-boton:checked ~ #contenido
+{
+	margin-left: 75%;
+}
+
+#panel-boton:checked ~ #panel
+{
+	opacity: 1;
+	width: 75%;
+}
+
+#panel-etiqueta
+{
+	cursor: pointer;
+	font-size: 3em;
+	height: .65em; 
+	left: .25em;
+	position: fixed;
+	top: .25em;
+	width: 1em;
+	z-index: 1000;
+}
+
+#panel-etiqueta:before
+{
+	background: rgb(159,33,96);
+	border-radius: .15em;
+	box-shadow: 0 .25em 0 rgb(159,33,96), 0 .5em 0 rgb(159,33,96);
+	content: "";
+	height: .15em;
+	left: 0;
+	position: absolute;
+	width: 1em;
+}
+
+#pg_cober
+{
+	background: rgba(159,33,96,0.8);
+	border: .2em solid white;
+	border-radius: .5em;
+	padding: .5em;
+}
+
+#pg_acerca
+{
+	background: rgba(255,255,255,0.4);
+	border: .4em solid rgba(159,33,96,0.8);
+	border-radius: 1em;
+	padding: 1em;
+}
+
+#wpgmza_map
+{
+	position: absolute;
+}
+
+.entrada
+{
+	background: #F0F0F0;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+.entrada>h2>a
+{
+	color: black;
+	margin-bottom: .5em;
+}
+
+.entrada>h2>a:hover
+{
+	color: #640429;
+}
+
+.entrada>img
+{
+	border: medium solid #444;
+	border-radius: 50%;
+}
+
+.product_form>fieldset
+{
+	display: none;
+}
+
+.extracto
+{
+	margin: 1em auto;
+	text-align: left;
+}
+
+.error
+{
+	color: red;
+	font-size: 2em;
+}
+
+
+.separador
+{
+	margin: 2em auto;
+}
+
+.tamanio-caja
+{
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.transicion
+{
+	-ms-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+/*-----GENERAL DE LA LISTA DE PRECIOS-----*/
+
+#default_products_page_container 
+{
+	background: #EEE;
+	border-radius: 3em;
+}
+
+/* MEDIAS PARA DIFERENTES RESOLUCIONES */
+@media screen and (min-width: 320px){
+	.productcol{
+		margin-left: 1em;
+	}
+}
+
+@media screen and (min-width: 480px){
+	#panel-boton:checked ~ #panel-etiqueta, #panel-boton:checked ~ header, #panel-boton:checked ~ #contenido{
+		margin-left: 45%;
+	}
+
+	#panel-boton:checked ~ #panel{
+		width: 45%;
+	}
+
+	#logo img{
+		height: 89px;
+		width: 190px;
+	}
+}
+
+@media screen and (min-width: 600px){
+}
+
+@media screen and (min-width: 768px){
+	
+	#panel-boton:checked ~ #panel-etiqueta, #panel-boton:checked ~ header, #panel-boton:checked ~ #contenido{
+		margin-left: 25%;
+	}
+
+	#panel-boton:checked ~ #panel{
+		width: 25%;
+	}
+
+	#menu-principal{
+		text-align: right;
+	}
+
+	#logo img{
+		height: 99px;
+		width: 200px;
+	}
+	.productcol{
+		margin-left: 180px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+
+	#contenido{
+		margin-top: 7em;
+		width: 80%;
+	}
+
+	#logo img{
+		width: 260px;
+	}
+
+	.pagina{
+		margin: 2em auto 5em auto;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	#contenido{
+		margin-top: 9.5em;
+	}
+
+	#est_cob{
+		font-size: .7em;
+		margin-left: 870px;
+	}
+
+	.pagina{
+		margin: 2em auto 1em auto;
+		font-size: 1.2em;
+	}
+	.pagina h2, h3{
+		font-family: "manoamano", sans-serif;
+		font-weight: normal;
+		margin: 0.3em;
+	}
+}
